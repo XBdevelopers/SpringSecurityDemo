@@ -27,7 +27,6 @@ public class SecurityConfigurationJdbc extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		System.out.println("Hello");
 		http.authorizeRequests()
 		.antMatchers(Constants.REST_ENDPOINT_ADMIN).hasRole(Constants.ROLE_ADMIN)
 		.antMatchers(Constants.REST_ENDPOINT_USER).hasAnyRole(Constants.ROLE_USER, Constants.ROLE_ADMIN)

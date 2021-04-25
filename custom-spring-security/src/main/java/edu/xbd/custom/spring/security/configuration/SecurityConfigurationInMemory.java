@@ -32,7 +32,6 @@ public class SecurityConfigurationInMemory extends WebSecurityConfigurerAdapter 
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		System.out.println("Bye");
 		http.authorizeRequests()
 			.antMatchers(Constants.REST_ENDPOINT_ADMIN).hasRole(Constants.ROLE_ADMIN)
 			.antMatchers(Constants.REST_ENDPOINT_USER).hasAnyRole(Constants.ROLE_USER, Constants.ROLE_ADMIN)

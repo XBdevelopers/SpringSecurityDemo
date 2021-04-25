@@ -1,2 +1,0 @@
-# SpringSecurityDemo
-Spring Security Implementations
